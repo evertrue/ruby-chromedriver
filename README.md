@@ -19,11 +19,12 @@ docker build github.com/levlozhkin/ruby-chromedriver
 # Example usage
 
 ```
-docker run -t ruby-chromedriver:1.0.0 -v .:/watir -v ~/.bundle:/bundle
+docker run -t github.com/levlozhkin/ruby-chromedriver:1.0.0
+    -v .:/watir -v ~/.bundle:/bundle -w /watir
     -e BUNDLE_PATH=/bundle --shm-size=1024m -- run.sh
 ```
 
-`Run.sh` contents:
+`run.sh` contents:
 
 ```
 #!/bin/sh
