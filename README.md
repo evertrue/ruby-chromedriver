@@ -13,13 +13,13 @@ convenience in development (and light CI usage).
 # Building
 
 ```
-docker build github.com/levlozhkin/ruby-chromedriver
+docker build levlozhkin/ruby-chromedriver
 ```
 
 # Example usage
 
 ```
-docker run -t github.com/levlozhkin/ruby-chromedriver:1.0.0
+docker run -t levlozhkin/ruby-chromedriver:1.0.0
     -v .:/watir -v ~/.bundle:/bundle -w /watir
     -e BUNDLE_PATH=/bundle --shm-size=1024m -- run.sh
 ```
