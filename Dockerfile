@@ -1,4 +1,4 @@
-FROM ruby:2.3.1
+FROM ruby:2.1.5
 LABEL description="Base container for Watir/Capybara tests against a local Chrome"
 LABEL version="1.0.0"
 MAINTAINER Lev Lozhkin <llozhkin@aurorasolar.com>
